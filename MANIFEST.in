@@ -1,0 +1,52 @@
+include README.md
+include LICENSE
+include requirements.txt
+include pyproject.toml
+include setup.py
+
+# Include SQL schema files
+include src/*.sql
+
+# Include documentation
+include docs/*.md
+include docs/*.txt
+
+# Include test files
+include tests/*.py
+include tests/*.md
+
+# Include configuration examples
+include *.env.example
+include *.config.example
+
+# Exclude development files
+exclude .git*
+exclude .venv
+exclude venv
+exclude __pycache__
+exclude *.pyc
+exclude *.pyo
+exclude *.pyd
+exclude .Python
+exclude build
+exclude develop-eggs
+exclude dist
+exclude downloads
+exclude eggs
+exclude .eggs
+exclude lib
+exclude lib64
+exclude parts
+exclude sdist
+exclude var
+exclude wheels
+exclude *.egg-info
+exclude .installed.cfg
+exclude *.egg
+exclude MANIFEST
+exclude .coverage
+exclude .pytest_cache
+exclude .mypy_cache
+exclude .tox
+exclude .black
+exclude .flake8 
